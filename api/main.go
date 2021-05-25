@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/echo", apifuncs.EchoHandler)
+	http.HandleFunc("/p-api", apifuncs.PrintHandler)
 
 	http.ListenAndServe(":1234", nil)
 }

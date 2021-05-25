@@ -6,9 +6,13 @@
 all:
 	make build/api
 	make build/web
+	make run
 
-build/api: 
+build/api:
 	cd api && go build main.go
 
 build/web:
 	echo hoge
+
+run:
+	cd api && ./main
